@@ -117,21 +117,21 @@ using namespace std;
 
 // Task 10
 
-void PrintRow(int start, int count) {
-        for (int i = start; i < start + count; i++) {
-            cout << i << " ";
-        }
-}
-
-int main() {
-    int n;
-    cin >>n;
-    int d=1;
-    for (int i=1; i<=n; i++) {
-        PrintRow(d, i);
-        d+=i;
-        cout << endl;
-    }
-}
+// void PrintRow(int start, int count) {
+//         for (int i = start; i < start + count; i++) {
+//             cout << i << " ";
+//         }
+// }
+//
+// int main() {
+//     int n;
+//     cin >>n;
+//     int d=1;
+//     for (int i=1; i<=n; i++) {
+//         PrintRow(d, i);
+//         d+=i;
+//         cout << endl;
+//     }
+// }
 
 
