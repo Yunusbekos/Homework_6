@@ -43,22 +43,27 @@ using namespace std;
 
 // Task 9
 
-// int factorial(int n);
-// int digitFactorialSum(int n);
-// int main() {
-//     int n;
-//     cin >> n;
-//     for(int i = 1; i <= n; i++) {
-//
-//     }
-
-
-// }
-int sub(int x);
-int main() {
-    cout<<sub(5);
-    return 0;
+int factorial(int n) {
+    int a=1;
+    for(int i = 1; i <= n; i++) {
+        a*=i;
+    }
+    return a;
 }
-int sub(int x) {
-    return x*x*x;
+int digitFactorialSum(int n) {
+    int c=0;
+    while (n>0) {
+        c=c+factorial(n%10);
+        n/=10;
+    }
+    return c;
+}
+int main() {
+    int n;
+    cin >> n;
+    for(int i = 1; i <= n; i++) {
+        if (digitFactorialSum(i) == i) {
+            cout << i << endl;
+        }
+    }
 }
